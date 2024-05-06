@@ -400,4 +400,5 @@ app.delete('/api/EscenaObjeto', (req, res) => {
 });
 
 
-app.listen(2023, () => console.log("Listening on port 2023"));
+const port = process.env.PORT || 2023;
+app.listen(port, () => console.log(`Listening on port ${port}`));
